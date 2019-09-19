@@ -110,7 +110,7 @@ router.post('/login', reCAPTCHA, function(req, res, next) {
     }
     var hash = new jsSHA("SHA3-256", "TEXT");
     hash.update(String(req.body.pwd) + "KatoMegumiSaiko><");
-    if (req.body.pwd && hash.getHash("HEX") === '982b75a8afd7d59e2384596ab462a273d25800d8acce88417142ba338f2443d5') {
+    if (req.body.pwd && hash.getHash("HEX") === 'b3e574776c0a55e329e7680f68103f63d6073417edd0d5b1eef0538c967cfdf7') {
         req.session.isLogin = true;
         req.session.loginFailed = 0;
     } else {
