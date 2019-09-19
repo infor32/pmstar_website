@@ -1,7 +1,7 @@
 var mongoose = require('mongoose');
 mongoose.Promise = require('bluebird');
 
-mongoose.connect('mongodb://localhost/PMStar-2018');
+mongoose.connect('mongodb://localhost/PMStar-2019');
 var Schema = mongoose.Schema;
 
 var announce = new Schema({
