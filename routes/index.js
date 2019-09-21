@@ -51,4 +51,8 @@ router.get('/coOrg', function(req, res, next) {
     res.render('coOrg', { title: "協辦單位" });
 });
 
+router.get('/musicCoOrg', function(req, res, next) {
+    res.render('musicCoOrg', { title: "協辦單位" });
+});
+
 module.exports = router;
